@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/constants.dart';
+import 'popular_tab_view.dart';
+import 'recent_tab_view.dart';
+import 'trending_tab_view.dart';
+
 import '../constants.dart';
-import 'tabs/popular_tab_view.dart';
-import 'tabs/recent_tab_view.dart';
-import 'tabs/trending_tab_view.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -11,17 +13,17 @@ class HomeView extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(120.0),
+          preferredSize: Size.fromHeight(120.0),
           child: Column(
             children: [
               ListTile(
                 title: Text(
-                  'WELCOME',
+                  "WELCOME",
                   textAlign: TextAlign.end,
                   style: kNonActiveTabStyle,
                 ),
                 subtitle: Text(
-                  'Jessica Veranda',
+                  "Dewi Asmita Lubis",
                   textAlign: TextAlign.end,
                   style: kActiveTabStyle,
                 ),
@@ -31,7 +33,7 @@ class HomeView extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     image: DecorationImage(
-                      image: AssetImage('assets/ve.jpg'),
+                      image: AssetImage("assets/me.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -40,27 +42,17 @@ class HomeView extends StatelessWidget {
               Align(
                 alignment: Alignment.topLeft,
                 child: TabBar(
-                  labelColor: kBlack,
-                  labelStyle: kActiveTabStyle.copyWith(
-                    fontSize: 24.0,
-                  ),
+                  labelColor: Colors.black,
+                  unselectedLabelColor: kGrey1,
+                  unselectedLabelStyle: kNonActiveTabStyle,
+                  indicatorSize: TabBarIndicatorSize.label,
                   isScrollable: true,
                   indicatorColor: Colors.white,
-                  indicatorSize: TabBarIndicatorSize.label,
-                  unselectedLabelColor: kGrey1,
-                  unselectedLabelStyle: kNonActiveTabStyle.copyWith(
-                    fontSize: 16.0,
-                  ),
+                  labelStyle: kActiveTabStyle.copyWith(fontSize: 25.0),
                   tabs: [
-                    Tab(
-                      text: 'Popular',
-                    ),
-                    Tab(
-                      text: 'Trending',
-                    ),
-                    Tab(
-                      text: 'Recent',
-                    ),
+                    Tab(text: "Popular"),
+                    Tab(text: "Trending"),
+                    Tab(text: "Recent"),
                   ],
                 ),
               ),

@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const Color kGrey1 = Color(0XFF9F9F9F);
-const Color kGrey2 = Color(0xFF6D6D6D);
-const Color kGrey3 = Color(0XFFEAEAEA);
-const Color kBlack = Color(0xFF1C1C1C);
+const kGrey1 = Color(0xFF9F9F9F);
+const kGrey2 = Color(0xFF6D6D6D);
+const kGrey3 = Color(0xFFEAEAEA);
+const kBlack = Color(0xFF1C1C1C);
 
 var kNonActiveTabStyle = GoogleFonts.roboto(
-  textStyle: TextStyle(
-    fontSize: 14.0,
-    color: kGrey1,
-  ),
+  textStyle: TextStyle(fontSize: 14.0, color: kGrey1),
 );
 
 var kActiveTabStyle = GoogleFonts.roboto(
@@ -31,7 +28,7 @@ var kCategoryTitle = GoogleFonts.roboto(
 
 var kDetailContent = GoogleFonts.roboto(
   textStyle: TextStyle(
-    fontSize: 14.0,
+    fontSize: 10.0,
     color: kGrey2,
   ),
 );
@@ -43,3 +40,9 @@ var kTitleCard = GoogleFonts.roboto(
     fontWeight: FontWeight.bold,
   ),
 );
+
+var descriptionStyle = GoogleFonts.roboto(
+    textStyle: TextStyle(
+  fontSize: 15.0,
+  height: 2.0,
+));

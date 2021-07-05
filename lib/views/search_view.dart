@@ -5,7 +5,7 @@ class SearchView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('Search View'),
+        child: Text("SearchView"),
       ),
     );
   }

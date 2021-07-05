@@ -5,7 +5,7 @@ class AccountView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('Account View'),
+        child: Text("AccountView"),
       ),
     );
   }

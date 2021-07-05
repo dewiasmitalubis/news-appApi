@@ -5,7 +5,7 @@ class FavoriteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('Favorite View'),
+        child: Text("FavoriteView"),
       ),
     );
   }
