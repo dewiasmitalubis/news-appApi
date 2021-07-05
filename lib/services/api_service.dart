@@ -10,7 +10,8 @@ class ApiService {
     final response = await http.get(Uri.tryParse(endPointUrl));
 
     if (response.statusCode == 200) {
-      Map<String, dynamic> json = jsonDecode(response.body);
+      var response2 = response;
+      Map<String, dynamic> json = jsonDecode(response2.body);
 
       List<dynamic> body = json['articles'];
 

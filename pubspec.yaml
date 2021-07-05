@@ -43,7 +43,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/ve2.jpg
+    - assets/me.jpg
     - assets/home.svg
     - assets/home_2.svg
     - assets/search.svg
